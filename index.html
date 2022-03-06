@@ -14,17 +14,23 @@
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
                 <li class="nav-item mr-2"><a href="/about" class="nav-link">About</a></li>
+                <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a></li>
             </ul>
-            <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
-            <a href="/login">Sing In / Sign Up</a>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
+                <a href="/login">Sing In / Sign Up</a>
+            </div>
     </nav>
-    <article class="container">
+    <article class="container mt-3">
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+                        <s class="d-none d-sm-inline">€19.99</s> 
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First one is free!</mark></strong></p>
                     <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>    
@@ -36,22 +42,32 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="quote">
-                    <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                    <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
+                    <div class="media">
+                        <img src="images/girl-image.png" alt="" class="rounded-circle mr-3" height="100" width="100">
+                        <div class="media-body">
+                            <blockquote class="quote">
+                            <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                            <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="quote">
-                        <p>I haven't been sober for months!</p>
-                        <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
+                    <div class="media">
+                        <img src="images/guy-image.png" alt="" class="rounded-circle mr-3" height="100" width="100">
+                        <div class="media-body">
+                            <blockquote class="quote">
+                                <p>I haven't been sober for months!</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,7 +77,7 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
